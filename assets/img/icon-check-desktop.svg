@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Check left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="High-Fidelity" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="plans" transform="translate(-219.000000, -314.000000)" fill="#009FDB">
+            <g id="Packages" transform="translate(100.000000, 161.000000)">
+                <g id="message" transform="translate(30.000000, 0.000000)">
+                    <g id="features" transform="translate(89.000000, 146.000000)">
+                        <g id="1">
+                            <path d="M29.7319005,17.5152241 L18.1704948,34.9771506 C17.7467673,35.6166797 17.0327864,36 16.2637209,36 C15.579401,36 14.9353351,35.7000966 14.4925399,35.1777482 L7.38027329,26.7983274 C6.8124784,26.1290066 6.88874936,25.1458794 7.55400158,24.5599754 C8.20018606,23.9899603 9.28704717,23.9780436 9.94594348,24.5381281 L15.988298,29.6444308 L26.8018246,15.670123 C27.3378399,14.9749826 28.454362,14.7863016 29.2170715,15.2669415 C30.009442,15.7674426 30.2361362,16.754542 29.7319005,17.5152241 M18.5,7 C8.28388889,7 0,15.2818333 0,25.5 C0,35.7181667 8.28388889,44 18.5,44 C28.7181667,44 37,35.7181667 37,25.5 C37,15.2818333 28.7181667,7 18.5,7" id="Check-left"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

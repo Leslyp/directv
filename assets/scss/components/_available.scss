@@ -1,21 +1,126 @@
 .available {
-	&__content {
-		&-title {
-			font-size: 26px;
-			line-height: 32px;
-			margin-bottom: 10px;
+	&--packages {
+		.available {
+			&__content {
+				&-title {
+					font-size: 26px;
+					line-height: 32px;
+					margin-bottom: 10px;
+				}
+				&-text {
+					font-size: 8px;
+					line-height: 10px;
+					margin-bottom: 20px;
+					color: $color-light-black;
+				}
+				.button--primary {
+					width: 277px;
+					height: 51px;
+					padding: 0;
+					margin-bottom: 0px;
+				}
+			}
 		}
-		&-text {
-			font-size: 8px;
-			line-height: 10px;
-			margin-bottom: 20px;
-			color: $color-light-black;
-		}
-		.button--primary {
-			width: 277px;
-			height: 51px;
-			padding: 0;
-			margin-bottom: 0px;
+	}
+	&--bundles {
+		background-color: $background-secondary;
+		.available {
+			&__content {
+				&-title {
+					font-size: 30px;
+					line-height: 32px;
+					margin-bottom: 18px;
+				}
+				&-text {
+					font-size: 16px;
+					line-height: 17px;
+					margin-bottom: 32px;
+					color: $color-light-black;
+				}
+				.button--primary {
+					width: 149px;
+					height: 50px;
+					padding: 0;
+					margin-bottom: 0px;
+				}
+				.form__container {
+					margin-bottom: 21px;
+
+					.columns {
+						padding: 0;
+					}
+					div {
+						position: relative;
+					}
+					&-image {
+						position: absolute;
+						top: 15px;
+						right: 5px;
+					}
+					input {
+						box-shadow: none;
+						border: none;
+						font-size: 10px;
+						line-height: 11px;
+						margin-bottom: 0;						
+					}
+					label {
+						font-size: 10px;
+						line-height: 11px;
+					}
+
+					.form-top {
+						div {
+							border: 1px solid #979797;
+						}
+						label {
+							display: none;
+						}
+						input {
+							/*border-top-left-radius: 6px;*/
+							/*border-top-right-radius: 6px;*/
+
+							&::placeholder {
+								color: $form-placeholder;
+							}
+						}
+						div:first-child {
+							border-top-left-radius: 6px;
+						}
+						div:last-child {
+							border-top-right-radius: 6px;
+						}
+						
+					}
+					.form-bottom {
+						div {
+							border: 1px solid #979797;
+							border-top: none;
+						}
+						label {
+							font-size: 5px;
+							line-height: 6px;
+							color: $form-placeholder;
+							display: none;
+						}
+						input {
+							border-bottom-left-radius: 6px;
+							border-bottom-right-radius: 6px;
+
+							&::placeholder {
+								color: $color-black;
+							}
+						}
+						div:first-child {
+							border-bottom-left-radius: 6px;
+						}
+						div:last-child {
+							border-bottom-right-radius: 6px;
+						}
+
+					}
+				}
+			}
 		}
 	}
 }
