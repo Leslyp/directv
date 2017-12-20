@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon - Check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Basic-Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Packages-Page" transform="translate(-34.000000, -296.000000)" fill="#009FDB">
+            <g id="All-Included" transform="translate(31.000000, 100.000000)">
+                <g id="feature-list" transform="translate(3.000000, 127.639938)">
+                    <path d="M19.7669276,71.0372646 L9.71416948,87.0111103 C9.34481306,87.5970481 8.72492062,87.9467939 8.0552894,87.9467939 C7.46118742,87.9467939 6.90024463,87.6724479 6.51430862,87.1937049 L0.331042637,79.5292749 C-0.162660709,78.9169926 -0.0972634377,78.0176462 0.481180035,77.4816721 C1.04304392,76.9593245 1.98808055,76.9493317 2.56191858,77.4607782 L7.81580643,82.1337458 L17.217355,69.3484919 C17.6852679,68.7125904 18.6551739,68.540897 19.3183575,68.9805775 C20.0082527,69.4375181 20.2053656,70.3404983 19.7669276,71.0372646" id="Icon---Check"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

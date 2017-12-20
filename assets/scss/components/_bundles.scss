@@ -1,0 +1,54 @@
+.bundles {
+	&-mobile {
+		&__content {
+			&-title {
+				font-size: 30px;
+				line-height: 33px;
+				margin-bottom: 25px;
+			}
+			&-text {
+				font-size: 16px;
+				line-height: 22px;
+				margin-bottom: 20px;
+			}
+			.button--primary {
+				width: 191px;
+				height: 49px;
+				padding: 0;
+				margin-bottom: 0px;
+			}
+		}
+
+		@media screen and (min-width: 1200px) {
+			display: none;
+		}
+	}
+
+	&-desktop {
+		display: none;
+		background-color: $background-primary;
+		padding-top: 51px;
+		padding-bottom: 44px;
+		
+		&__content {
+			&-title {
+				font-size: 34px;
+				line-height: 42px;
+				color: $color-white;
+				display: inline-block;
+				margin: 0;
+				margin-right: 29px;
+			}
+			.button--primary {
+				width: 220px;
+				height: 51px;
+				padding: 0;
+				margin: 0;
+			}
+		}
+
+		@media screen and (min-width: 1200px) {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,43 @@
+.button {
+	&--primary {
+		background-color: white;
+		color: $color-button-dark-blue;
+		font-size: 18px;
+		line-height: 50px;
+		border: 1px solid $color-button-border-grey;
+		border-radius: 100px;
+	}
+	&--contact {
+		background-color: transparent;
+		color: $color-button-light-blue;
+		font-size: 12px;
+		line-height: 14px;
+		border: 1.5px solid $color-button-light-blue;
+		border-radius: 100px;
+	}
+	&--secondary {
+		background-color: $color-button-orange;
+		color: $color-white;
+		font-size: 18px;
+		line-height: 50px;
+		border: 1px solid $color-button-border-orange;
+		border-radius: 100px;
+
+		&-square {
+			border-radius: 10px;
+			background-color: $color-button-orange;
+			color: $color-white;
+			font-size: 18px;
+			line-height: 50px;
+			border: 1px solid $color-button-border-orange;
+		}
+	}
+	&--tertiary {
+		background-color: $color-button-blue;
+		color: $color-white;
+		font-size: 18px;
+		line-height: 50px;
+		border-radius: 100px;
+	}
+	
+}

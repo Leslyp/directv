@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="18px" viewBox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header-1" transform="translate(-18.000000, -20.000000)" fill="#FFFFFF">
+            <g id="header">
+                <path d="M39,35.3 C39,34.8078125 38.6035156,34.4 38.125,34.4 L18.875,34.4 C18.3964844,34.4 18,34.8078125 18,35.3 L18,37.1 C18,37.5921875 18.3964844,38 18.875,38 L38.125,38 C38.6035156,38 39,37.5921875 39,37.1 L39,35.3 Z M39,28.1 C39,27.6078125 38.6035156,27.2 38.125,27.2 L18.875,27.2 C18.3964844,27.2 18,27.6078125 18,28.1 L18,29.9 C18,30.3921875 18.3964844,30.8 18.875,30.8 L38.125,30.8 C38.6035156,30.8 39,30.3921875 39,29.9 L39,28.1 Z M39,20.9 C39,20.4078125 38.6035156,20 38.125,20 L18.875,20 C18.3964844,20 18,20.4078125 18,20.9 L18,22.7 C18,23.1921875 18.3964844,23.6 18.875,23.6 L38.125,23.6 C38.6035156,23.6 39,23.1921875 39,22.7 L39,20.9 Z" id="Icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>

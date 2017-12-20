@@ -1,0 +1,21 @@
+.available {
+	&__content {
+		&-title {
+			font-size: 26px;
+			line-height: 32px;
+			margin-bottom: 10px;
+		}
+		&-text {
+			font-size: 8px;
+			line-height: 10px;
+			margin-bottom: 20px;
+			color: $color-light-black;
+		}
+		.button--primary {
+			width: 277px;
+			height: 51px;
+			padding: 0;
+			margin-bottom: 0px;
+		}
+	}
+}

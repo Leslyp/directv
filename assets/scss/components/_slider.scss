@@ -1,0 +1,11 @@
+.slider {
+	&_packages {
+		&__content {
+			&-hint {
+				font-size: 10px;
+				line-height: 12px;
+				color: $color-light-black;
+			}
+		}
+	}
+}
