@@ -6,42 +6,76 @@
 					font-size: 26px;
 					line-height: 32px;
 					margin-bottom: 10px;
+
+					@media screen and (min-width: 1200px) {
+						font-size: 36px;
+						line-height: 44px;
+						margin-bottom: 20px;
+					}
 				}
 				&-text {
 					font-size: 8px;
 					line-height: 10px;
 					margin-bottom: 20px;
 					color: $color-light-black;
+
+					@media screen and (min-width: 1200px) {
+						font-size: 11px;
+						line-height: 12px;
+						margin-bottom: 30px;
+					}
 				}
 				.button--primary {
 					width: 277px;
 					height: 51px;
 					padding: 0;
 					margin-bottom: 0px;
+					margin-left: -8px;
+					color: $color-button-blue;
+
+					@media screen and (min-width: 1200px) {
+						background-color: $color-button-blue;
+						color: $color-white;
+					}
 				}
 			}
 		}
 	}
 	&--bundles {
-		background-color: $background-secondary;
 		.available {
 			&__content {
 				&-title {
 					font-size: 30px;
 					line-height: 32px;
 					margin-bottom: 18px;
+
+					@media screen and (min-width: 1200px) {
+						font-size: 36px;
+						line-height: 44px;
+						margin-bottom: 20px;
+					}
 				}
 				&-text {
 					font-size: 16px;
 					line-height: 17px;
 					margin-bottom: 32px;
 					color: $color-light-black;
+
+					@media screen and (min-width: 1200px) {
+						font-size: 18px;
+						line-height: 26px;
+						margin-bottom: 28px;
+					}
 				}
 				.button--primary {
 					width: 149px;
 					height: 50px;
 					padding: 0;
 					margin-bottom: 0px;
+
+					@media screen and (min-width: 1200px) {
+						display: none;
+					}
 				}
 				.form__container {
 					margin-bottom: 21px;
@@ -69,55 +103,124 @@
 						line-height: 11px;
 					}
 
-					.form-top {
-						div {
-							border: 1px solid #979797;
+					&--mobile {
+						.form-top {
+							div {
+								border: 1px solid #979797;
+							}
+							label {
+								display: none;
+							}
+							input {
+								&::placeholder {
+									color: $form-placeholder;
+								}
+							}
+							div:first-child {
+								border-top-left-radius: 6px;
+								border-right: none
+							}
+							div:last-child {
+								border-top-right-radius: 6px;
+							}
+							.input {
+								&--one {
+									border-top-left-radius: 6px;
+								}
+								&--two {
+									border-top-right-radius: 6px;
+								}
+							}
 						}
-						label {
-							display: none;
-						}
-						input {
-							/*border-top-left-radius: 6px;*/
-							/*border-top-right-radius: 6px;*/
-
-							&::placeholder {
+						.form-bottom {
+							div {
+								border: 1px solid #979797;
+								border-top: none;
+								position: relative;
+							}
+							label {
+								position: absolute;
+								font-size: 5px;
+								line-height: 6px;
 								color: $form-placeholder;
+								left: 9px;
+								top: 2px;
+							}
+							input {
+								&::placeholder {
+									color: $color-black;
+								}
+							}
+							div:first-child {
+								border-bottom-left-radius: 6px;
+							}
+							div:last-child {
+								border-bottom-right-radius: 6px;
+							}
+							/* fix borders on divs */
+							:not(:first-child):not(:last-child) {
+								border-right: none;
+								border-left: none;
+
+								/* hide middle label */
+								label {
+									display: none;
+								}
+							}
+							.input {
+								&--three {
+									border-bottom-left-radius: 6px;
+								}
+								&--five {
+									border-bottom-right-radius: 6px;
+								}
 							}
 						}
-						div:first-child {
-							border-top-left-radius: 6px;
+
+						@media screen and (min-width: 1200px) {
+							display: none;
 						}
-						div:last-child {
-							border-top-right-radius: 6px;
-						}
-						
 					}
-					.form-bottom {
+
+					&--desktop {
+						display: none;
+						position: relative;
+
 						div {
-							border: 1px solid #979797;
-							border-top: none;
+							position: relative;
+						}
+						img {
+							position: absolute;
+							top: 15px;
+							left: 26px;
 						}
 						label {
-							font-size: 5px;
-							line-height: 6px;
-							color: $form-placeholder;
 							display: none;
 						}
 						input {
-							border-bottom-left-radius: 6px;
-							border-bottom-right-radius: 6px;
+							border: 1px solid #979797;
+							font-size: 18px;
+							line-height: 26px;
+							padding-left: 72px;
+							display: inline;
+							width: 420px;
+							height: 60px;
+							border-top-left-radius: 100px;
+							border-bottom-left-radius: 100px;						
+						}
+						.button--tertiary {
+							width: 221px;
+							height: 60px;
+							border-radius: 0;
+							border-top-right-radius: 100px;
+							border-bottom-right-radius: 100px;
+							margin-left: -5px;
+							padding: 0;
+						}
 
-							&::placeholder {
-								color: $color-black;
-							}
+						@media screen and (min-width: 1200px) {
+							display: inline-block;
 						}
-						div:first-child {
-							border-bottom-left-radius: 6px;
-						}
-						div:last-child {
-							border-bottom-right-radius: 6px;
-						}
-
 					}
 				}
 			}

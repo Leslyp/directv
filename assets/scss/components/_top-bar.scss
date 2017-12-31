@@ -88,7 +88,7 @@
 					color: $color-white;
 				}
 				ul {
-					margin-left: 144px;
+					margin-left: 134px;
 					color: $color-white;
 					position: absolute;
 					top: -3px;
@@ -104,8 +104,10 @@
 					}
 				}
 				&--logo {
-					margin-left: 16px;
-					margin-right: 65px;
+				    width: 120px;
+    				height: 33px;
+    				margin: 0;
+    				margin-right: 60px;
 				}
 
 			}

@@ -108,32 +108,82 @@
 	}
 
 	&-packages {
-		padding: 40px 10px;
+		&-mobile {
+			padding: 40px 10px;
 
-		&__content {
-			&-heading {
-				font-size: 30px;
-				line-height: 36px;
-				margin-bottom: 15px;
-			}
-			&-title {
-				font-size: 18px;
-				line-height: 32px;
-				margin-bottom: 8px;
-				color: $color-button-light-blue;
-			}
-			&-list {
-				list-style: none;
-				margin: 0;
+			&__content {
+				&-heading {
+					font-size: 30px;
+					line-height: 36px;
+					margin-bottom: 15px;
+				}
+				&-title {
+					font-size: 18px;
+					line-height: 32px;
+					margin-bottom: 8px;
+					color: $color-button-light-blue;
+				}
+				&-list {
+					list-style: none;
+					margin: 0;
 
-				&-item {
-					font-size: 16px;
-					line-height: 17px;
+					&-item {
+						font-size: 16px;
+						line-height: 17px;
 
-					img {
-						margin-right: 12px;
+						img {
+							margin-right: 12px;
+						}
 					}
 				}
+			}
+			@media screen and (min-width: 1200px) {
+				display: none;
+			}
+		}
+		&-desktop {
+			display: none;
+			padding: 0 10px;
+			padding-top: 81px;
+			padding-bottom: 40px;
+
+			&__content {
+				&-heading {
+					font-size: 30px;
+					line-height: 36px;
+					margin-bottom: 15px;
+					text-align: center;
+				}
+				&-title {
+					font-size: 18px;
+					line-height: 32px;
+					margin-bottom: 8px;
+					color: $color-button-light-blue;
+					text-align: center;
+					display: inline-block;
+					text-transform: uppercase;
+				}
+				&-image {
+					display: inline;
+					margin-left: 10px;
+					margin-right: 18px;
+				}
+				&-text {
+					display: inline;
+					margin-bottom: 0;
+				}
+				div {
+					display: flex;
+				}
+				hr {
+					width: 330px;
+					display: inline-block;
+					margin: 0;
+					padding-top: 7px;
+				}
+			}
+			@media screen and (min-width: 1200px) {
+				display: inline-block;
 			}
 		}
 	}
@@ -145,17 +195,134 @@
 				font-size: 30px;
 				line-height: 32px;
 				margin-bottom: 15px;
+
+				@media screen and (min-width: 1200px) {
+					font-size: 45px;
+					line-height: 44px;
+					color: $color-white;
+				}
 			}
 			&-title {
 				font-size: 16px;
 				line-height: 17px;
 				margin-bottom: 20px;
+
+				@media screen and (min-width: 1200px) {
+					font-size: 18px;
+					line-height: 26px;
+					color: $color-white;
+				}
 			}
 			&-text {
 				font-size: 11px;
 				line-height: 12px;
 				color: $color-light-black;
+
+				@media screen and (min-width: 1200px) {
+					color: $color-white;
+				}
 			}
+		}
+		&__hint {
+			display: none;
+			color: $color-white;
+			padding-top: 34px;
+			padding-left: 31px;
+
+			p {
+				font-size: 11px;
+				line-height: 12px;
+			}
+			
+			@media screen and (min-width: 1200px) {
+				display: block;
+			}
+			@media screen and (min-width: 1440px) {
+				padding-left: 30px;
+			}
+		}
+		
+		@media screen and (min-width: 1200px) {
+			padding-top: 72px;
+			padding-bottom: 85px;
+		}
+	}
+	&-customer {
+		padding: 40px 0px;
+		padding-left: 23px;
+		padding-right: 32px;
+
+		&__content {
+			&-heading {
+				font-size: 30px;
+				line-height: 32px;
+				margin-bottom: 18px;
+
+				@media screen and (min-width: 1200px) {
+					font-size: 45px;
+					line-height: 44px;
+					margin-bottom: 30px;
+					color: $color-white;
+				}
+			}
+			&-text {
+				font-size: 16px;
+				line-height: 17px;
+				margin-bottom: 22px;
+
+				&--blue {
+					font-size: 20px;
+					line-height: 22px;
+					margin-bottom: 18px;
+					color: $color-button-light-blue;
+				}
+				&--call {
+					font-size: 16px;
+					line-height: 17px;
+					margin-bottom: 0px;
+
+					&-number {
+						color: $color-button-light-blue;
+						display: block;
+
+						@media screen and (min-width: 1200px) {
+							display: inline-block;
+						}
+					}
+
+					@media screen and (min-width: 1200px) {
+						font-size: 14px;
+						line-height: 20px;
+						margin-bottom: 0px;
+						color: $color-white;
+					}
+				}
+				
+
+				@media screen and (min-width: 1200px) {
+					font-size: 18px;
+					line-height: 26px;
+					margin-bottom: 15px;
+					color: $color-white;
+				}
+			}
+		}
+		&__hint {
+			display: none;
+			font-size: 11px;
+			line-height: 12px;
+			color: $color-white;
+			margin-bottom: 0;
+			margin-top: 56px;
+
+			@media screen and (min-width: 1200px) {
+				display: block;
+			}
+		}
+		@media screen and (min-width: 1200px) {
+			padding: 0px;
+			padding-top: 73px;
+			padding-bottom: 59px;
 		}
 	}
 }

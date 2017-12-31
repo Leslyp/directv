@@ -10,7 +10,8 @@ jQuery( document ).ready( function( $ ) {
 	}); 
 	jQuery( function( $ ) {
 		$('.js-slider').slick({
-			dots: false,
+			dots: true,
+			arrows: true,
 			infinite: false,
 			speed: 300,
 			slidesToShow: 3,
@@ -22,7 +23,6 @@ jQuery( document ).ready( function( $ ) {
 			        slidesToShow: 3,
 			        slidesToScroll: 3,
 			        infinite: true,
-			        dots: false
 			      }
 			    },
 			    {
@@ -30,7 +30,7 @@ jQuery( document ).ready( function( $ ) {
 			      settings: {
 			        slidesToShow: 2,
 			        slidesToScroll: 2,
-			        dots: true
+			      	arrows: false
 			      }
 			    },
 			    {
@@ -38,94 +38,65 @@ jQuery( document ).ready( function( $ ) {
 			      settings: {
 			        slidesToShow: 1,
 			        slidesToScroll: 1,
-			        dots: true
+			        arrows: false
 			      }
 			    }
 		    ]
 		});
 	});
 	
-	// $.ajax({
-	//     // The URL for the request
-	//     url: "offers.json",
+	$.ajax({
+	    // The URL for the request
+	    url: "offers-dtv.json",
 	 
-	//     // The data to send (will be converted to a query string)
-	//     data: {
-	//         "dealers": "data"
-	//     },
+	    // The data to send (will be converted to a query string)
+	    data: {
+	        "offers": "data"
+	    },
 	 
-	//     // Whether this is a POST or GET request
-	//     type: "GET",
+	    // Whether this is a POST or GET request
+	    type: "GET",
 	 
-	//     // The type of data we expect back
-	//     dataType : "json",
-	// })
-	// 	// Code to run if the request succeeds (is done);
-	// 	// The response is passed to the function
-	// 	.done(function( json ) {
-	// 		var object = json.offers[0];
+	    // The type of data we expect back
+	    dataType : "json",
+	})
+	// Code to run if the request succeeds (is done);
+	// The response is passed to the function
+	.done(function( json ) {
+		console.log(json);
 
-	// 		// for loop to go through the plans in the json file and fill in dynamic data
-	//     	for (var i = 0; i < object.plans.length; i++) {
-	//     		var plan = object.plans[i]; 
+		var object = json.offers;
+		console.log(object);
+		// for loop to go through the objects in the json file and fill in dynamic data
+    	for (var i = 0; i < object.length; i++) {
+    	    var name = object[i].name;
+    	    var channels = object[i].channels;
+    	    var price = object[i].price;
+    	    var legal = object[i].legal;
 
-	//     		// get price div
-	//     	    var description = plan.description;
-	//     	    var price = plan.price;
-	//     	    var legal = plan.legal;
+    	    $("#slide-"+ i).find('.slide__title').html( name );
+    	    $("#slide-"+ i).find('.slide__text--channels').html( channels + " channels");
+    		$("#slide-"+ i).find('.slide__price-amount').html( price );
+    		$("#slide-"+ i).find('.slide__text--month').html( legal );
 
-	//     	    $("#slide-"+ i).find('.slide__price-title').html( description );
-	//     		$("#slide-"+ i).find('.slide__price-amount').html( price );
-	//     		$("#slide-"+ i).find('.slide__price-plan').html( legal );
+    		// change css for border colors
+    		var colors = ['#EFB300', '#00A383', '#4BACCB','#EFB300', '#00A383', '#4BACCB'];
+    		$("#slide-"+ i).css("border-top", "12px solid " + colors[i]);
+    	}
+	})
 
-
-	//     	    // get internet div
-	//     	    var title = plan.internet.label;
-	//     	    var devices = plan.internet.sublabel;
-	//     	    var download = plan.internet.detail;
-
-	//     	    $("#slide-"+ i).find('.slide__internet-title').html( title );
-	//     		$("#slide-"+ i).find('.slide__internet-devices').html( devices );
-	//     		$("#slide-"+ i).find('.slide__internet-download').html( download );
-
-
-	//     		// get tv div
-	//     	    var title = plan.tv.label;
-	//     	    var sublabel = plan.tv.sublabel;
-	//     	    var detail = plan.tv.detail;
-	//     	    var devices = plan.tv.premiumChannels;
-
-	//     	    $("#slide-"+ i).find('.slide__tv-title').html( title );
-	//     	    $("#slide-"+ i).find('.slide__tv-pick').html( sublabel );
-	//     		$("#slide-"+ i).find('.slide__tv-multi').html( detail );
-	    		
-	//     		// if statement to determine if premium message should show
-	//     		if (devices == true) {
-	//     			$("#slide-"+ i).find('.slide__tv-view').html( "Premium movie channels included:" );
-	//     		} 
-
-
-	//     		// get home div
-	//     	    var title = plan.phone.label;
-	//     	    var sublabel = plan.phone.sublabel;
-
-	//     	    $("#slide-"+ i).find('.slide__home-title').html( title );
-	//     	    $("#slide-"+ i).find('.slide__home-text').html( sublabel );
-	//     	}
- //  		})
-
-	// 	// Code to run if the request fails; the raw request and
-	// 	// status codes are passed to the function
-	// 	.fail(function( xhr, status, errorThrown ) {
-	// 		alert( "Sorry, there was a problem!" );
-	// 		console.log( "Error: " + errorThrown );
-	// 		console.log( "Status: " + status );
-	// 		console.dir( xhr );
-	// 	})
-	// 	// Code to run regardless of success or failure;
-	// 	.always(function( xhr, status ) {
-	// 		alert( "The request is complete!" );
-	// 	});
+	// Code to run if the request fails; the raw request and
+	// status codes are passed to the function
+	.fail(function( xhr, status, errorThrown ) {
+		alert( "Sorry, there was a problem!" );
+		console.log( "Error: " + errorThrown );
+		console.log( "Status: " + status );
+		console.dir( xhr );
+	})
+	// Code to run regardless of success or failure;
+	.always(function( xhr, status ) {
+		alert( "The request is complete!" );
+	});
  });
 
 

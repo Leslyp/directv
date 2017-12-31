@@ -1,5 +1,7 @@
 .bundles {
 	&-mobile {
+		border-bottom: 1px solid $color-line;
+		
 		&__content {
 			&-title {
 				font-size: 30px;

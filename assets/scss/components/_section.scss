@@ -7,11 +7,33 @@
 			height: 390px;
 			width: 100%;
 		}
+		&-packages {
+			width: 100%;
+		}
+		&-bundles {
+			@media screen and (min-width: 1200px) {
+				background-image: url('../img/hero-bundle-bg.jpg');
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				height: 390px;
+				width: 100%;
+				margin-bottom: 83px;
+			}
+		}
+		&-customer {
+			@media screen and (min-width: 1200px) {
+				background-image: url('../img/hero-customer-bg.jpg');
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				height: 390px;
+				width: 100%;
+				margin-bottom: 83px;
+			}
+		}
 	}
 	&--bundles {
 		padding-top: 41px;
 		padding-bottom: 43px;
-		border-bottom: 1px solid $color-line;
 	}
 	&--values {
 		padding: 40px 28px;
@@ -22,11 +44,43 @@
 	}
 	&--slider {
 		padding-bottom: 20px;
+		padding: 0 10px;
+		padding-bottom: 40px;
+
+		&--bundles {
+			padding: 0 10px;
+			padding-bottom: 40px;
+		}
+		&--customer {
+			padding: 0 10px;
+			padding-top: 32px;
+			padding-bottom: 40px;
+			border-top: 1px solid $color-line;
+		}
 	}
 	&--available {
-		border-top: 1px solid $color-line;
-		padding: 0 42px;
-		padding-top: 22px;
-		padding-bottom: 40px;
+		&-packages {
+			border-top: 1px solid $color-line;
+			padding: 0 42px;
+			padding-top: 22px;
+			padding-bottom: 40px;
+
+			@media screen and (min-width: 1200px) {
+				border: none;
+				padding-bottom: 70px;
+			}
+		}
+		&-bundles {
+			padding: 0 40px;
+			padding-top: 37px;
+			padding-bottom: 23px;
+			background-color: $background-secondary;
+
+			@media screen and (min-width: 1200px) {
+				background-color: transparent;
+				padding-top: 10px;
+				padding-bottom: 70px;
+			}
+		}
 	}
 }

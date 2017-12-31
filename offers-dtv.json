@@ -1,0 +1,40 @@
+{
+    "offers": [
+        {
+            "name": "DIRECTV SELECT<sup>tm</sup>",
+            "channels": "150+",
+            "price": "$50",
+            "legal": "For 12 Months W/ 24-mo. TV agmt* $90/mo. in months 13-24 (subject to change). Regional sports fee up to $7.29/mo. is extra & applies in certain markets. For SELECT All-Included TV Pkg."
+        },
+        {
+            "name": "DIRECTV ENTERTAINMENT",
+            "channels": "155+",
+            "price": "$55",
+            "legal": "For 12 Months W/ 24-mo. TV agmt* $101/mo. in months 13-24 (subject to change). Regional sports fee up to $7.29/mo. is extra & applies in certain markets. For ENTERTAINMENT All-Included TV Pkg. "
+        },
+        {
+            "name": "DIRECTV CHOICE<sup>tm</sup>",
+            "channels": "185+",
+            "price": "$60",
+            "legal": "For 12 Months W/ 24-mo. TV agmt* $115/mo. in months 13-24 (subject to change). Regional sports fee up to $7.29/mo. is extra & applies in certain markets. For CHOICE All-Included TV Pkg."
+        },
+        {
+            "name": "DIRECTV PREMIER<sup>tm</sup>",
+            "channels": "195+",
+            "price": "$65",
+            "legal": "For 12 Months W/ 24-mo. TV agmt* $118/mo. in months 13-24 (subject to change). Regional sports fee up to $7.29/mo. is extra & applies in certain markets. For PREMIER All-Included TV Pkg."
+        },
+        {
+            "name": "DIRECTV PRIME<sup>tm</sup>",
+            "channels": "205+",
+            "price": "$70",
+            "legal": "For 12 Months W/ 24-mo. TV agmt* $126/mo. in months 13-24 (subject to change). Regional sports fee up to $7.29/mo. is extra & applies in certain markets. For PRIME All-Included TV Pkg."
+        },
+        {
+            "name": "DIRECTV ULTRA<sup>tm</sup>",
+            "channels": "215+",
+            "price": "$75",
+            "legal": "For 12 Months W/ 24-mo. TV agmt* $145/mo. in months 13-24 (subject to change). Regional sports fee up to $7.29/mo. is extra & applies in certain markets. For ULTRA All-Included TV Pkg."
+        }
+    ]
+}

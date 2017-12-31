@@ -1,11 +1,168 @@
 .slider {
-	&_packages {
+	&-packages {
+		.slide {
+			background-color: $background-secondary;
+			padding: 20px 30px;
+			margin-bottom: 24px;
+
+			&__title {
+				font-size: 18px;
+				line-height: 20px;
+				margin-bottom: 3px;
+
+				sup {
+					margin-left: 2px;
+					text-transform: uppercase;
+				}
+			}
+			&__price {
+				font-size: 32px;
+				line-height: 36px;
+				margin-bottom: 10px;
+			}
+			&__details {
+				font-size: 6px;
+				line-height: 6px;
+				color: $form-placeholder;
+				padding-top: 11px;
+			}
+			&__text {
+				&--months {
+					font-size: 8px;
+					line-height: 10px;
+					color: $form-placeholder;
+					margin-bottom: 9px;
+				}
+				&--channels {
+					font-size: 22px;
+					line-height: 25px;
+					color: $color-dark-grey;
+					margin-bottom: 13px;
+					display: inline-block;
+				}
+				&--premium {
+					font-size: 12px;
+					line-height: 12px;
+					color: $color-dark-grey;
+					margin-bottom: 5px;
+				}
+				&--extra {
+					font-size: 12px;
+					line-height: 12px;
+					color: $color-dark-grey;
+					margin-bottom: 5px;
+				}
+				&--packages {
+					font-size: 10px;
+					line-height: 12px;
+					color: $form-placeholder;
+					margin-bottom: 13px;
+				}
+				&--hint {
+					display: none;
+					margin-bottom: 9px;
+
+					@media screen and (min-width: 1200px) {
+						display: inline-block;
+					}
+				}
+			}
+			&__list {
+				display: flex;
+				list-style: none;
+				margin: 0;
+				margin-bottom: 10px;
+				justify-content: space-between;
+			}
+			.button-container {
+				text-align: center;
+				.button--secondary {
+					width: 191px;
+					height: 50px;
+					padding: 0;
+					margin-bottom: 0;
+				}
+			}
+			
+			&__link {
+				font-size: 10px;
+				line-height: 11px;
+				text-decoration: underline;
+				color: $color-button-dark-blue;
+				display: inline-block;
+				margin-left: 7px;
+			}
+		}
 		&__content {
+			text-align: center;
 			&-hint {
+				margin: 0px;
+				margin-top: 38px;
 				font-size: 10px;
 				line-height: 12px;
 				color: $color-light-black;
 			}
 		}
 	}
+	&-bundles {
+		&__content {
+			text-align: center;
+			&-hint {
+				margin: 0px;
+				margin-top: 22px;
+				font-size: 10px;
+				line-height: 12px;
+				color: $color-light-black;
+
+				@media screen and (min-width: 1200px) {
+					margin-top: 38px;
+				}
+			}
+		}
+	}
+	&-customer {
+		&__title {
+			font-size: 30px;
+			line-height: 32px;
+			margin-left: 10px;
+		}
+		&__content {
+			text-align: center;
+			&-hint {
+				margin: 0px;
+				margin-top: 22px;
+				font-size: 10px;
+				line-height: 12px;
+				color: $color-light-black;
+
+				@media screen and (min-width: 1200px) {
+					margin-top: 38px;
+				}
+			}
+		}
+	}
+}
+.slick-dots {
+	& li button:before {
+		@media screen and (min-width: 1200px) {
+			font-size: 18px;
+		}
+	}
+	& li.slick-active button:before {
+		color: $color-button-light-blue;
+
+		@media screen and (min-width: 1200px) {
+			color: $color-slide-button-blue;
+			opacity: 1;
+			font-size: 21px;
+		}
+	}
+}
+.slick-next:before, .slick-prev:before {
+    font-size: 60px;
+    color: $color-button-border-grey;
+    margin-left: -18px;
+}
+.slick-next.slick-disabled:before, .slick-prev.slick-disabled:before {
+	opacity: 1;
 }

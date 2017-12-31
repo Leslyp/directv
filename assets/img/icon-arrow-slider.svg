@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="61px" viewBox="0 0 61 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="High-Fidelity" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="plans" transform="translate(-100.000000, -592.000000)">
+            <g id="Packages" transform="translate(100.000000, 161.000000)">
+                <g id="grid" transform="translate(0.000000, 240.000000)">
+                    <g id="controls" transform="translate(0.000000, 191.000000)">
+                        <g id="prev">
+                            <g id="Arrow">
+                                <g id="Right-Arrow" transform="translate(30.500000, 30.500000) rotate(-180.000000) translate(-30.500000, -30.500000) ">
+                                    <g id="Assets/Arrow/Left-arrow-filled" transform="translate(30.903141, 30.692800) rotate(-180.000000) translate(-30.903141, -30.692800) translate(0.903141, 0.692800)">
+                                        <g id="Left-Arrow">
+                                            <circle id="Oval" fill="#D2D2D2" cx="30" cy="30" r="30"></circle>
+                                            <path d="M33.6824123,19.9999783 C34.1679143,19.9999783 34.6518375,20.1854954 35.0220821,20.5549506 C35.7602031,21.2970187 35.7594137,22.4945904 35.0197138,23.2327114 L28.2487366,29.993426 L35.0394497,36.7667716 C35.7791496,37.5064714 35.7815179,38.7048326 35.0433969,39.4445324 C34.303697,40.1834428 33.1061253,40.1858111 32.3648466,39.4476902 L24.7704895,31.8722794 C24.2802508,31.3851985 24.0000017,30.7015485 24.0000017,29.9965838 C23.9992122,29.2908296 24.2786719,28.607969 24.7673317,28.1193092 L32.3443213,20.5533717 C32.7137765,20.1831271 33.1976997,19.9999783 33.6824123,19.9999783" id="Page-1" fill="#FFFFFF"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
