@@ -63,10 +63,7 @@ jQuery( document ).ready( function( $ ) {
 	// Code to run if the request succeeds (is done);
 	// The response is passed to the function
 	.done(function( json ) {
-		console.log(json);
-
 		var object = json.offers;
-		console.log(object);
 		// for loop to go through the objects in the json file and fill in dynamic data
     	for (var i = 0; i < object.length; i++) {
     	    var name = object[i].name;
@@ -79,9 +76,13 @@ jQuery( document ).ready( function( $ ) {
     		$("#slide-"+ i).find('.slide__price-amount').html( price );
     		$("#slide-"+ i).find('.slide__text--month').html( legal );
 
-    		// change css for border colors
-    		var colors = ['#EFB300', '#00A383', '#4BACCB','#EFB300', '#00A383', '#4BACCB'];
-    		$("#slide-"+ i).css("border-top", "12px solid " + colors[i]);
+    		// add class to slides to trigger border colors
+    		$("#slide-0").addClass("slide--yellow");
+    		$("#slide-1").addClass("slide--green");
+    		$("#slide-2").addClass("slide--blue");
+    		$("#slide-3").addClass("slide--yellow");
+    		$("#slide-4").addClass("slide--green");
+    		$("#slide-5").addClass("slide--blue");
     	}
 	})
 

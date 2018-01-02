@@ -16686,7 +16686,8 @@ $font-ss-pika: 'SS Pika', sans-serif;*/
 .slider-packages .slide {
   background-color: #F2F2F2;
   padding: 20px 30px;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  /* border color for slider */ }
   .slider-packages .slide__title {
     font-size: 18px;
     line-height: 20px;
@@ -16757,6 +16758,12 @@ $font-ss-pika: 'SS Pika', sans-serif;*/
     color: #0469AE;
     display: inline-block;
     margin-left: 7px; }
+  .slider-packages .slide--yellow {
+    border-top: 12px solid #EFB300; }
+  .slider-packages .slide--green {
+    border-top: 12px solid #00A383; }
+  .slider-packages .slide--blue {
+    border-top: 12px solid #4BACCB; }
 .slider-packages__content {
   text-align: center; }
   .slider-packages__content-hint {

@@ -85,7 +85,6 @@
 					margin-bottom: 0;
 				}
 			}
-			
 			&__link {
 				font-size: 10px;
 				line-height: 11px;
@@ -93,6 +92,16 @@
 				color: $color-button-dark-blue;
 				display: inline-block;
 				margin-left: 7px;
+			}
+			/* border color for slider */
+			&--yellow {
+				border-top: 12px solid $color-slide-yellow;
+			}
+			&--green {
+				border-top: 12px solid $color-slide-green;
+			}
+			&--blue {
+				border-top: 12px solid $color-slide-blue;
 			}
 		}
 		&__content {
