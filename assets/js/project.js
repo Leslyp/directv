@@ -80,8 +80,8 @@ jQuery( document ).ready( function( $ ) {
     		$("#slide-"+ i).find('.slide__text--month').html( legal );
 
     		// change css for border colors
-    		// var colors = ['#EFB300', '#00A383', '#4BACCB','#EFB300', '#00A383', '#4BACCB'];
-    		// $("#slide-"+ i).css("border-top", "12px solid " + colors[i]);
+    		var colors = ['#EFB300', '#00A383', '#4BACCB','#EFB300', '#00A383', '#4BACCB'];
+    		$("#slide-"+ i).css("border-top", "12px solid " + colors[i]);
     	}
 	})
 
