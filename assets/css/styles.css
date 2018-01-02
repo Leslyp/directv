@@ -16630,7 +16630,8 @@ $font-ss-pika: 'SS Pika', sans-serif;*/
     .values__list {
       display: none; } }
 .values .add-on__content {
-  padding: 0 20px; }
+  padding: 0 20px;
+  margin-bottom: 40px; }
   .values .add-on__content-image {
     margin-bottom: 18px; }
     .values .add-on__content-image.show-desktop {
@@ -16692,7 +16693,9 @@ $font-ss-pika: 'SS Pika', sans-serif;*/
     margin-bottom: 3px; }
     .slider-packages .slide__title sup {
       margin-left: 2px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      top: -6px;
+      font-size: 10px; }
   .slider-packages .slide__price {
     font-size: 32px;
     line-height: 36px;
